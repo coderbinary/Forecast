@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>ForeCast</title>
+<script defer src="main.js"></script></head>
+<body>
+  <header class="header">
+    <h2>ForeCast</h2>
+    <div class="searchbar-wrapper">
+      <input type="search" placeholder="Search city..." class="searchbar">
+      <div class="search-btn"><span class="material-icons">search</span></div>
+    </div>
+  </header>
+  <main id="content">
+    <h1 class="city">----</h1>
+    <div class="hero">
+      <div class="weather-icon"><img alt=""></div>
+      <p class="temp">--</p>
+      <p class="conditions">-- --</p>
+    </div>
+    <div class="WHUV">
+      <div class="wind">
+        <span class="material-icons icons">air</span>
+        <p class="wind-value">--</p>
+        <p class="whuv-category">WIND</p>
+      </div>
+      <div class="humidity">
+        <span class="material-icons icons">water_drop</span>
+        <p class="humidity-value">--</p>
+        <p class="whuv-category">HUMIDITY</p>
+      </div>
+      <div class="uv-index">
+        <span class="material-icons icons">sunny</span>
+        <p class="uv-index-value">--</p>
+        <p class="whuv-category">UV INDEX</p>
+      </div>
+      <div class="visibility">
+        <span class="material-icons icons">landscape</span>
+        <p class="visibility-value">--</p>
+        <p class="whuv-category">VISIBILITY</p>
+      </div>
+    </div>
+    <div class="six-day-forecast">
+      <div class="">
+        <p>TOM</p>
+        <div class="small-icon"><img alt=""></div>
+        <p class="temp-range">--/--</p>
+      </div>
+      <div>
+        <p>--</p>
+        <div class="small-icon"><img alt=""></div>
+        <p class="temp-range">--/--</p>
+      </div>
+      <div>
+        <p>--</p>
+        <div class="small-icon"><img alt=""></div>
+        <p class="temp-range">--/--</p>
+      </div>
+      <div>
+        <p>--</p>
+        <div class="small-icon"><img alt=""></div>
+        <p class="temp-range">--/--</p>
+      </div>
+      <div>
+        <p>--</p>
+        <div class="small-icon"><img alt=""></div>
+        <p class="temp-range">--/--</p>
+      </div>
+      <div>
+        <p>--</p>
+        <div class="small-icon"><img alt=""></div>
+        <p class="temp-range">--/--</p>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <a href=""><i class="fa-brands fa-github"></i></a>
+  </footer>
+  <dialog class="not-found">
+    <p>City Not Found !!!</p>
+  </dialog>
+</body>
+</html>
