@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,*::before,*::after{
+  padding: 0;
+  box-sizing: border-box;
+}
+body,h1,h2,h3,p{
+  margin: 0;
+  font-family: 'Poppins','sans-serif';
+  font-size: 1.2rem;
+}
+body{
+  height: 100dvh;
+  background: linear-gradient(135deg, #697edc, #7a44dd);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+}
+.header > h2{
+  font-size: 2.5rem;
+  color: #ffffffd9;
+}
+.searchbar-wrapper{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: clamp(300px,80%,400px);
+  position: relative;
+}
+.searchbar-wrapper > .searchbar{
+  font-size: inherit;
+  border: none;
+  padding: 0.4rem 3rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  color: #44474B;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.searchbar-wrapper > .searchbar:focus{
+  outline: none;
+}
+.search-btn{
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  border-radius: 8px;
+  position: absolute;
+  left: 2%;
+}
+.search-btn > span{
+  color: #44474B;
+  cursor: pointer;
+}
+
+#content{
+
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: flex-start;
+  align-items: center;
+  width: clamp(300px,80%,500px);
+  height: 75%;
+  overflow: scroll;
+  scrollbar-width: none;
+  gap: 0.5rem;
+}
+.footer{
+  height: 10%;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer > a{
+  color: #ffffffd5;
+}
+
+#content > .city{
+  color:#ffffffc4;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+
+}
+.hero{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  width: clamp(300px,80%,500px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.hero > .weather-icon{
+  height: 4rem;
+  width: fit-content;
+  text-align: center;
+}
+
+.hero > .weather-icon > img{
+  object-fit: cover;
+  height: 100%;
+  
+}
+.hero > .temp{
+  color:#44474ba8;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.hero > .conditions{
+  color:#44474ba8;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-wrap: balance;
+
+}
+.WHUV{
+  width: clamp(300px,80%,500px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  
+}
+.WHUV > div{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 1rem;
+  border-radius: 8px;
+  padding-inline: 0.5rem;
+  justify-items: center;
+  align-items: center;
+  padding-block: 0.4rem;
+  background: rgba(255, 255, 255, 0.8);
+}
+.WHUV > div > p{
+  font-size: 1rem;
+  font-weight: 500;
+  color:#44474ba8;
+  text-wrap: balance;
+}
+.WHUV > div > .icons{
+  grid-row: span 2;
+  font-size: 1.8rem;
+}
+.WHUV span{
+  color:#44474ba8;
+}
+
+.WHUV > div >.whuv-category{
+  font-size: 0.8rem;
+}
+.six-day-forecast{
+  width: clamp(300px,80%,500px);
+  display: grid ;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3,auto);
+  grid-template-rows: repeat(3,auto);
+  color:#44474ba8;
+}
+.six-day-forecast > div{
+  display: flex;
+  font-size: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+}
+.six-day-forecast > div > .small-icon > img{
+  object-fit: cover;
+  height: 80%;
+}
+.not-found{
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+.not-found:focus{
+  outline: none;
+}
+.not-found > p{
+  background: transparent;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.not-found::backdrop{
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
